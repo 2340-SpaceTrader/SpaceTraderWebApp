@@ -30,9 +30,12 @@
 <script>
 // import HelloWorld from './components/HelloWorld'
 // import Dashboard from './components/Dashboard'
+// import {mapState} from 'vuex'
+// import Navigation from './components/Navigation.vue'
+
 
 export default {
-  name: 'App',
+  // name: 'App',
   // components: {
   //   HelloWorld,
   // },
@@ -40,6 +43,10 @@ export default {
   //   return {
   //     //
   //   }
+  // }
+  // components: { Navigation },
+  // computed: {
+  //     ...mapState(['currentUser'])
   // }
 }
 </script>
