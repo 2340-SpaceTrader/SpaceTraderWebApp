@@ -25,6 +25,7 @@ import Router from 'vue-router'
 // import firebase from 'firebase'
 
 import HelloWorld from '@/components/HelloWorld'
+import Dashboard from '@/components/Dashboard'
 
 // import Login from '@/components/Login'
 // import Dashboard from '@/components/Dashboard'
@@ -38,13 +39,18 @@ const router = new Router({
     routes: [
         {
             path: '*',
-            redirect: '/helloworld'
+            redirect: '/dashboard'
         },
         {
             path: '/',
-            name: 'HelloWorld',
-            component: HelloWorld
+            name: 'Dashboard',
+            component: Dashboard
         },
+        {
+            path: '/dashboard',
+            name: 'Dashboard',
+            component: Dashboard
+        }, 
         {
             path: '/helloworld',
             name: 'HelloWorld',
