@@ -7,21 +7,27 @@
           </v-toolbar>
 
           <!-- <v-card-actions> -->
-            <v-layout row align-space-between justify-center>
+            <v-layout column align-content-space-around justify-center>
               <v-flex md4>
                 <v-layout align-space-left justify-left column>
-                  <v-btn color="primary" to="/RegNav">New Game</v-btn>
+                  <v-btn color="primary" to="/NewGame">New Game</v-btn>
                 </v-layout>
               </v-flex>
 
               <v-flex md4>
                 <v-layout align-space-right justify-right column>
-                  <v-btn color="primary" to="/RegNav">Continue</v-btn>
+                  <v-btn color="primary" to="/GameView">Continue</v-btn>
+                </v-layout>
+              </v-flex>
+              <v-flex md4>
+                <v-layout align-space-left justify-left column>
+                  <v-btn color="primary" to="/LogIn">Logout</v-btn>
                 </v-layout>
               </v-flex>
 
             </v-layout>
           <!-- </v-card-actions> -->
+          
         </v-card>
       </v-flex>
     </v-layout>

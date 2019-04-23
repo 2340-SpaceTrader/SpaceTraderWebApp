@@ -32,8 +32,8 @@
               @blur="$v.passwordStr.$touch()"
             ></v-text-field>
             <v-layout align-center justify-center>
-              <v-btn color="primary" @click="onLogin">Login</v-btn>
-              <v-btn color="primary" to="/RegNav">Register</v-btn>
+              <v-btn color="primary" @click="onLogin" to="/Dashboard">Login</v-btn>
+              <v-btn color="primary" to="/RegUser">Register</v-btn>
             </v-layout>
           </v-form>
         </v-card-text>

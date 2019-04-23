@@ -18,13 +18,12 @@
 
 
             <v-layout row align-start justify-space-around>
-                <v-btn large color="primary" to="/RegNav">MARKETPLACE</v-btn>
-                <v-btn large color="primary" to="/RegNav">TRAVEL</v-btn>
+                <v-btn large color="primary" to="/MarketPlace">MARKETPLACE</v-btn>
+                <v-btn large color="primary" to="/TravelOption">TRAVEL</v-btn>
             </v-layout>
 
             <v-layout row align-start justify-space-around>
-                <v-btn color="primary" to="/RegNav">BACK</v-btn>
-                <v-btn color="primary" to="/RegNav">DONE</v-btn>
+                <v-btn color="primary" to="/Dashboard">BACK</v-btn>
             </v-layout>
 
 

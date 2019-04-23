@@ -1,6 +1,6 @@
 <template>
   <v-layout align-center justify-center>
-    <v-flex xs12 sm12 md8>
+    <v-flex xs12 sm12 md4>
       <v-card class="elevation-12">
         <v-toolbar dark color="primary">
           <v-toolbar-title>Travel Option</v-toolbar-title>
@@ -11,10 +11,9 @@
 
 <template>
   <v-container fluid>
-    <v-layout row wrap align-center>
+    <v-layout column wrap align-center>
       <v-flex xs6>
-       
-        <v-subheader>Destination</v-subheader>
+        <v-subheader class="title font-weight-Black">Destination</v-subheader>
       </v-flex>
       <v-flex xs6>
         <v-select
@@ -33,8 +32,8 @@
             <v-layout align-center justify-center>
             </v-layout>
             <v-layout align-center justify-center>
-              <v-btn color="primary" to="/RegNav">Back</v-btn>
-              <v-btn color="primary" @click="onLogin">Next</v-btn>
+              <v-btn color="primary" to="/GameView">Back</v-btn>
+              <v-btn color="primary" @click="onLogin" to="/GameView">Done</v-btn>
             </v-layout>
           </v-form>
         </v-card-text>

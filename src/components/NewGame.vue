@@ -45,8 +45,8 @@
             </v-layout>
 
             <v-layout row align-start justify-space-around>
-                <v-btn color="primary" to="/RegNav">Log Transit</v-btn>
-                <v-btn color="primary" to="/RegNav">Back</v-btn>
+                <v-btn color="primary" to="/GameView">Done</v-btn>
+                <v-btn color="primary" to="/Dashboard">Back</v-btn>
             </v-layout>
 
 

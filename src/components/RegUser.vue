@@ -78,8 +78,8 @@
             <v-layout align-center justify-center>
             </v-layout>
             <v-layout align-center justify-center>
-              <v-btn color="primary" to="/RegNav">Back</v-btn>
-              <v-btn color="primary" to="/RegNav">Register</v-btn>
+              <v-btn color="primary" to="/LogIn">Back</v-btn>
+              <v-btn color="primary" to="/GameView">Register</v-btn>
             </v-layout>
           </v-form>
         </v-card-text>

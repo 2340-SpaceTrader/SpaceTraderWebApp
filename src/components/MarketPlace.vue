@@ -35,15 +35,15 @@
 
 
             <v-layout row align-start justify-space-around>
-                <v-btn large color="primary" to="/RegNav">BUY ITEMS</v-btn>
-                <v-btn large color="primary" to="/RegNav">SELL ITEMS</v-btn>
+                <v-btn large color="primary">BUY ITEMS</v-btn>
+                <v-btn large color="primary">SELL ITEMS</v-btn>
             </v-layout>
 
             
 
             <v-layout row align-start justify-space-around>
-                <v-btn color="primary" to="/RegNav">BACK</v-btn>
-                <v-btn color="primary" to="/RegNav">DONE</v-btn>
+                <v-btn color="primary" to="/GameView">BACK</v-btn>
+                <v-btn color="primary" to="/GameView">DONE</v-btn>
             </v-layout>
 
 
