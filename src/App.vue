@@ -15,9 +15,15 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content>
+    <!-- <v-content>
       <HelloWorld/>
-    </v-content>
+    </v-content> -->
+    <div class="container">
+       <transition name="moveInUp">
+         <router-view/>
+       </transition>
+        
+      </div>
   </v-app>
 </template>
 
