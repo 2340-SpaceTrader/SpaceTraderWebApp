@@ -22,17 +22,18 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+// import HelloWorld from './components/HelloWorld'
+// import Dashboard from './components/Dashboard'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  },
-  data () {
-    return {
-      //
-    }
-  }
+  // components: {
+  //   HelloWorld,
+  // },
+  // data () {
+  //   return {
+  //     //
+  //   }
+  // }
 }
 </script>
