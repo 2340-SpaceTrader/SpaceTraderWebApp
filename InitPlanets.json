@@ -1,0 +1,173 @@
+{
+	"Init Planets" : [
+		{"name" : "Acamar",
+		 "location" : {"x" : "10", "y" : "20"},
+		 "TechLevel" : {"Level" : "0", "Name" : "PreAgriculture"},
+		 "PriceResource" : "Lifeless",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "1", "Quantity" : "50"},
+		 	{"Name" : "Furs" , "Price" : "10", "Quantity" : "10"},
+		 	{"Name" : "Food",  "Price" : "15", "Quantity" : "10"},
+		 	{"Name" : "Ore", "Price" :"20", "Quantity" : "10"},
+		 	{"Name" : "Games", "Price" : "25", "Quantity" : "10"},
+		 	{"Name" : "Firearms", "Price" :	"100", "Quantity" : "10"},
+		 	{"Name" : "Medicine", "Price" : "200", "Quantity" : "10"},
+		 	{"Name" : "Narcotics", "Price" : "500", "Quantity"  : "10"},
+		 	{"Name" : "Robots",	"Price" : "1500", "Quantity" : "1"}
+		 ]
+		},
+
+		{"name" : "Brax",
+		 "location" : {"x" : "12", "y" : "70"},
+		 "TechLevel" : {"Level" : "1", "Name" : "Agriculture"},
+		 "PriceResource" : "MineralRich",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "2", "Quantity" : "10"},
+		 	{"Name" : "Furs" , "Price" : "20", "Quantity" : "12"},
+		 	{"Name" : "Food",  "Price" : "24", "Quantity" : "30"},
+		 	{"Name" : "Ore", "Price" :"20", "Quantity" : "20"},
+		 	{"Name" : "Games", "Price" : "45", "Quantity" : "11"},
+		 	{"Name" : "Firearms", "Price" :	"150", "Quantity" : "17"},
+		 	{"Name" : "Medicine", "Price" : "255", "Quantity" : "19"},
+		 	{"Name" : "Narcotics", "Price" : "600", "Quantity"  : "1"},
+		 	{"Name" : "Robots",	"Price" : "1400", "Quantity" : "3"}
+		 ]
+		},
+
+		{"name" : "Calonia",
+		 "location" : {"x" : "90", "y" : "43"},
+		 "TechLevel" : {"Level" : "2", "Name" : "Medieval"},
+		 "PriceResource" : "LotsOfWater",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "1", "Quantity" : "100"},
+		 	{"Name" : "Furs" , "Price" : "23", "Quantity" : "14"},
+		 	{"Name" : "Food",  "Price" : "30", "Quantity" : "24"},
+		 	{"Name" : "Ore", "Price" :"40", "Quantity" : "25"},
+		 	{"Name" : "Games", "Price" : "60", "Quantity" : "15"},
+		 	{"Name" : "Firearms", "Price" :	"188", "Quantity" : "67"},
+		 	{"Name" : "Medicine", "Price" : "421", "Quantity" : "12"},
+		 	{"Name" : "Narcotics", "Price" : "656", "Quantity"  : "4"},
+		 	{"Name" : "Robots",	"Price" : "1642", "Quantity" : "45"}
+		 ]
+		},
+
+		{"name" : "Campor",
+		 "location" : {"x" : "36", "y" : "73"},
+		 "TechLevel" : {"Level" : "3", "Name" : "Renaissance"},
+		 "PriceResource" : "RichSoil",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "8", "Quantity" : "12"},
+		 	{"Name" : "Furs" , "Price" : "43", "Quantity" : "23"},
+		 	{"Name" : "Food",  "Price" : "57", "Quantity" : "25"},
+		 	{"Name" : "Ore", "Price" :"46", "Quantity" : "25"},
+		 	{"Name" : "Games", "Price" : "90", "Quantity" : "15"},
+		 	{"Name" : "Firearms", "Price" :	"200", "Quantity" : "10"},
+		 	{"Name" : "Medicine", "Price" : "123", "Quantity" : "2"},
+		 	{"Name" : "Narcotics", "Price" : "400", "Quantity"  : "7"},
+		 	{"Name" : "Robots",	"Price" : "2030", "Quantity" : "4"}
+		 ]
+		},
+
+		{"name" : "Cestus",
+		 "location" : {"x" : "123", "y" : "41"},
+		 "TechLevel" : {"Level" : "4", "Name" : "Industrial"},
+		 "PriceResource" : "War",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "5", "Quantity" : "28"},
+		 	{"Name" : "Furs" , "Price" : "13", "Quantity" : "24"},
+		 	{"Name" : "Food",  "Price" : "36", "Quantity" : "92"},
+		 	{"Name" : "Ore", "Price" :"79", "Quantity" : "12"},
+		 	{"Name" : "Games", "Price" : "346", "Quantity" : "34"},
+		 	{"Name" : "Firearms", "Price" :	"2000", "Quantity" : "2"},
+		 	{"Name" : "Medicine", "Price" : "122", "Quantity" : "43"},
+		 	{"Name" : "Narcotics", "Price" : "509", "Quantity"  : "5"},
+		 	{"Name" : "Robots",	"Price" : "5004", "Quantity" : "1"}
+		 ]
+		},
+
+		{"name" : "Deneb",
+		 "location" : {"x" : "56", "y" : "145"},
+		 "TechLevel" : {"Level" : "5", "Name" : "PostIndustrial"},
+		 "PriceResource" : "LotsOfHerbs",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "1", "Quantity" : "50"},
+		 	{"Name" : "Furs" , "Price" : "23", "Quantity" : "34"},
+		 	{"Name" : "Food",  "Price" : "56", "Quantity" : "122"},
+		 	{"Name" : "Ore", "Price" :"89", "Quantity" : "34"},
+		 	{"Name" : "Games", "Price" : "100", "Quantity" : "23"},
+		 	{"Name" : "Firearms", "Price" :	"150", "Quantity" : "32"},
+		 	{"Name" : "Medicine", "Price" : "200", "Quantity" : "64"},
+		 	{"Name" : "Narcotics", "Price" : "700", "Quantity"  : "2"},
+		 	{"Name" : "Robots",	"Price" : "1530", "Quantity" : "23"}
+		 ]
+		},
+
+		{"name" : "Endor",
+		 "location" : {"x" : "22", "y" : "25"},
+		 "TechLevel" : {"Level" : "6", "Name" : "HiTech"},
+		 "PriceResource" : "Never",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "2", "Quantity" : "53"},
+		 	{"Name" : "Furs" , "Price" : "15", "Quantity" : "56"},
+		 	{"Name" : "Food",  "Price" : "82", "Quantity" : "15"},
+		 	{"Name" : "Ore", "Price" :"56", "Quantity" : "86"},
+		 	{"Name" : "Games", "Price" : "230", "Quantity" : "21"},
+		 	{"Name" : "Firearms", "Price" :	"333", "Quantity" : "35"},
+		 	{"Name" : "Medicine", "Price" : "540", "Quantity" : "13"},
+		 	{"Name" : "Narcotics", "Price" : "1200", "Quantity"  : "12"},
+		 	{"Name" : "Robots",	"Price" : "1690", "Quantity" : "2"}
+		 ]
+		},
+
+		{"name" : "Exo",
+		 "location" : {"x" : "34", "y" : "112"},
+		 "TechLevel" : {"Level" : "2", "Name" : "Medieval"},
+		 "PriceResource" : "Boredom",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "8", "Quantity" : "23"},
+		 	{"Name" : "Furs" , "Price" : "44", "Quantity" : "22"},
+		 	{"Name" : "Food",  "Price" : "13", "Quantity" : "62"},
+		 	{"Name" : "Ore", "Price" :"68", "Quantity" : "34"},
+		 	{"Name" : "Games", "Price" : "154", "Quantity" : "4"},
+		 	{"Name" : "Firearms", "Price" :	"412", "Quantity" : "14"},
+		 	{"Name" : "Medicine", "Price" : "524", "Quantity" : "5"},
+		 	{"Name" : "Narcotics", "Price" : "1234", "Quantity"  : "4"},
+		 	{"Name" : "Robots",	"Price" : "2246", "Quantity" : "4"}
+		 ]
+		},
+
+		{"name" : "Jason",
+		 "location" : {"x" : "78", "y" : "26"},
+		 "TechLevel" : {"Level" : "6", "Name" : "PostIndustrial"},
+		 "PriceResource" : "Desert",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "60", "Quantity" : "1"},
+		 	{"Name" : "Furs" , "Price" : "14", "Quantity" : "4"},
+		 	{"Name" : "Food",  "Price" : "12", "Quantity" : "42"},
+		 	{"Name" : "Ore", "Price" :"57", "Quantity" : "9"},
+		 	{"Name" : "Games", "Price" : "75", "Quantity" : "80"},
+		 	{"Name" : "Firearms", "Price" :	"120", "Quantity" : "5"},
+		 	{"Name" : "Medicine", "Price" : "230", "Quantity" : "12"},
+		 	{"Name" : "Narcotics", "Price" : "560", "Quantity"  : "4"},
+		 	{"Name" : "Robots",	"Price" : "1230", "Quantity" : "4"}
+		 ]
+		},
+
+		{"name" : "Lave",
+		 "location" : {"x" : "58", "y" : "180"},
+		 "TechLevel" : {"Level" : "0", "Name" : "PreAgriculture"},
+		 "PriceResource" : "Plague",
+		 "Items" : [
+		 	{"Name" : "Water", "Price" : "6", "Quantity" : "14"},
+		 	{"Name" : "Furs" , "Price" : "41", "Quantity" : "34"},
+		 	{"Name" : "Food",  "Price" : "57", "Quantity" : "12"},
+		 	{"Name" : "Ore", "Price" :"25", "Quantity" : "6"},
+		 	{"Name" : "Games", "Price" : "124", "Quantity" : "41"},
+		 	{"Name" : "Firearms", "Price" :	"263", "Quantity" : "15"},
+		 	{"Name" : "Medicine", "Price" : "730", "Quantity" : "5"},
+		 	{"Name" : "Narcotics", "Price" : "510", "Quantity"  : "1"},
+		 	{"Name" : "Robots",	"Price" : "1330", "Quantity" : "3"}
+		 ]
+		}
+	]
+}
