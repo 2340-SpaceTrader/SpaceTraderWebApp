@@ -4,7 +4,7 @@
       <v-flex xs12 sm8 md5>
         <v-card class="elevation-12">
           <v-toolbar dark color="primary">
-            <v-toolbar-title>Space Trader</v-toolbar-title>
+            <v-toolbar-title>Market Place</v-toolbar-title>
           </v-toolbar>
 
           <!-- <v-card-actions> -->
