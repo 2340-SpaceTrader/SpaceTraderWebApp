@@ -3,12 +3,12 @@ import 'firebase/firestore'
 
 // firebase init goes here
 const config = {
-    apiKey: "AIzaSyCVRzz0wRUBBWiGpcrI2NTCazwXXxHPgdE",
-    authDomain: "spacetraderweb-30703.firebaseapp.com",
-    databaseURL: "https://spacetraderweb-30703.firebaseio.com",
-    projectId: "spacetraderweb-30703",
-    storageBucket: "spacetraderweb-30703.appspot.com",
-    messagingSenderId: "996674489456"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
 }
 firebase.initializeApp(config)
 
