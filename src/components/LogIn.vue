@@ -17,8 +17,8 @@
               v-model="emailStr"
               :error-messages="emailErrors"
               required
-              @input="$v.emailStr.$touch()"
-              @blur="$v.emailStr.$touch()"
+              
+              
             ></v-text-field>
             <v-text-field
               id="password"
@@ -29,75 +29,84 @@
               v-model="passwordStr"
               :error-messages="passwordErrors"
               required
-              @input="$v.passwordStr.$touch()"
-              @blur="$v.passwordStr.$touch()"
+              
+              
             ></v-text-field>
             <v-layout align-center justify-center>
-              <v-btn color="primary" @click="onLogin" to="/Dashboard">Login</v-btn>
-              <v-btn color="primary" to="/RegUser">Register</v-btn>
+              <v-btn color="primary" @click="onLogin" to="/dashboard">Login</v-btn>
+              <v-btn color="primary" to="/register">Register</v-btn>
             </v-layout>
 
 
           </v-form>
+          <transition name="fade">
+              <div v-if="errorMsg !== ''" class="error-msg">
+                  <p>{{ errorMsg }}</p>
+              </div>
+          </transition>
         </v-card-text>
       </v-card>
     </v-flex>
   </v-layout>
 </template>
 
-// <script>
-// import { required, email } from "vuelidate/lib/validators";
-// const axios = require("axios");
+<script>
+import { required, email } from "vuelidate/lib/validators";
 
-// export default {
-//   validations: {
-//     emailStr: { required, email },
-//     passwordStr: { required }
-//   },
-//   data: () => ({
-//     emailStr: "",
-//     passwordStr: ""
-//   }),
-//   computed: {
-//     passwordErrors() {
-//       const errors = [];
-//       if (!this.$v.passwordStr.$dirty) return errors;
-//       !this.$v.passwordStr.required && errors.push("Password is required.");
-//       return errors;
-//     },
-//     emailErrors() {
-//       const errors = [];
-//       if (!this.$v.emailStr.$dirty) return errors;
-//       !this.$v.emailStr.email && errors.push("Must be valid e-mail");
-//       !this.$v.emailStr.required && errors.push("E-mail is required");
-//       return errors;
-//     }
-//   },
-//   methods: {
-//     onLogin() {
-//       this.$v.$touch();
-//       // if (this.$v.$invalid) return
+const fb = require('../firebaseConfig.js')
+export default {
+  
 
-//       let Username = "test1";
-//       let Password = "test1";
-      
-//       // this.$store
-//       //   .dispatch("login", { Username, Password })
-//       //   .then(() => this.$http.post("http://localhost:3000/users/login"))
-//       //   .catch(err => console.log(err));
+  validations: {
+    emailStr: { required, email },
+    passwordStr: { required }
+  },
+  data: () => ({
+    emailStr: "",
+    passwordStr: "",
+    performingRequest: false,
+    errorMsg: ""
+  }),
+  computed: {
+    passwordErrors() {
+      const errors = [];
+      if (!this.passwordStr || !this.passwordStr.$dirty) return errors;
+      !this.passwordStr.required && errors.push("Password is required.");
+      return errors;
+    },
+    emailErrors() {
+      const errors = [];
+      if (!this.emailStr || !this.emailStr.$dirty) return errors;
+      !this.emailStr.email && errors.push("Must be valid e-mail");
+      !this.emailStr.required && errors.push("E-mail is required");
+      return errors;
+    }
+  },
+  methods: {
+    onLogin() {
+      // this.$touch();
 
-//       axios
-//         .post("http://localhost:3000/users/login", {
-//           Username: "test1",
-//           Password: "test1"
-//         })
-//         .then(function(response) {
-//           console.log(response);
-//         })
-//         .catch(function(error) {
-//           console.log(error);
-//         });
-//     }
-//   }
-// };
-// </script>
+      this.performingRequest = true
+      fb.usersCollection.orderByChild("email").equalTo(this.emailStr).on("value", function(snapshot) {
+        if (snapshot.exists()) {
+            console.log(snapshot);
+             console.log("exists");
+        }else{
+            console.log("doesn't exist");
+          }
+        });
+      // fb.auth.signInWithEmailAndPassword(this.emailStr, this.passwordStr).then(user => {
+      //     this.$store.commit('setCurrentUser', user)
+      //     this.$store.dispatch('fetchUserProfile')
+      //     this.performingRequest = false
+      //     this.$router.push('/dashboard')
+      // }).catch(err => {
+      //     console.log(err)
+      //     this.performingRequest = false
+      //     this.errorMsg = err.message
+      // })
+    }
+
+  }
+};
+</script> 

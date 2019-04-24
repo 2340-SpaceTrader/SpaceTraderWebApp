@@ -34,16 +34,35 @@
 </template>
 
 <script>
+  const fb = require('../firebaseConfig.js')
+  var gameProfile;
+  var gameState;
+  fb.db.ref('Users/-LdE490P64UFp6SuwRiH/').on('value', function(snapshot) {
+     gameProfile = snapshot.val()['gameProfile'];
+     gameState = snapshot.val()['gameState'];
+    })
+
   export default {
     data () {
         
       return {
+        
         contain_site: ['Beginner', 'Easy', 'Normal', 'Hard', 'Impossible'],
-        name: 'Hello', fuel: "200.0", planet: "Planet123", position: "(2,5)", resource: "Resource123"
+        // name: 'Hello', fuel: "200.0", planet: "Planet123", position: "(2,5)", resource: "Resource123"
+        name: gameProfile.playername, fuel: gameProfile.fuel, planet: gameProfile.planet, position: gameProfile.location, resource: "Water"
+
       }
     },
     props: {
       source: String
-    }
+    }, 
+    
+        
+
+        
+            
+
+    
   }
+
 </script>

@@ -35,8 +35,8 @@
 
 
             <v-layout row align-start justify-space-around>
-                <v-btn large color="primary">BUY ITEMS</v-btn>
-                <v-btn large color="primary">SELL ITEMS</v-btn>
+                <v-btn large color="primary" @click="buy">BUY ITEMS</v-btn>
+                <v-btn large color="primary" @click="sell">SELL ITEMS</v-btn>
             </v-layout>
 
             
@@ -54,16 +54,41 @@
 </template>
 
 <script>
+  const fb = require('../firebaseConfig.js')
+  var itemlist = [];
+  var listname = [];
+  var gameProfile;
+  var gameState;
+  fb.db.ref('Users/-LdE490P64UFp6SuwRiH/').on('value', function(snapshot) {
+     gameProfile = snapshot.val()['gameProfile'];
+     gameState = snapshot.val()['gameState'];
+     gameState['Items'].forEach(item => {
+      itemlist.append(item);
+      listname.append(item.Name);
+     })
+    })
   export default {
     data () {
         
       return {
-        contain_site: ['Beginner', 'Easy', 'Normal', 'Hard', 'Impossible'],
+        contain_site: ['water', 'clothes', 'fire', 'rock', 'dimond', 'wood', 'candy', 'chip', 'fuel'],
         name: 'Hello', fuel: "200.0", planet: "Planet123", position: "(2,5)", resource: "Resource123"
       }
     },
     props: {
       source: String
+    },
+    methods: {
+    buy() {
+        
+        this.$router.push('/gameview')
+      },
+
+    sell() {
+        
+        this.$router.push('/gameview')
+    }
+
     }
   }
 </script>

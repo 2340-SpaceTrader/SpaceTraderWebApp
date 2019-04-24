@@ -33,7 +33,7 @@
             </v-layout>
             <v-layout align-center justify-center>
               <v-btn color="primary" to="/GameView">Back</v-btn>
-              <v-btn color="primary" @click="onLogin" to="/GameView">Done</v-btn>
+              <v-btn color="primary" @click="travel" to="/GameView">Done</v-btn>
             </v-layout>
           </v-form>
         </v-card-text>
@@ -43,6 +43,7 @@
 </template>
 
 <script>
+  const fb = require('../firebaseConfig.js')
 export default {
   data () {
     return  {
@@ -59,9 +60,31 @@ export default {
           { text: 'State 4' }
         ],
         states: [
-        'Place 1','Place 2','Place 3'
+        'Planet 1','Planet 2','Planet 3', 'Planet 4', 'Planet 5', 'Planet 6', 'Planet 7', 'Planet 8', 'Planet 9', 'Planet 10'
         ]
       }
   },
+  methods: {
+    travel() {
+      var f = 200;
+      fb.db.ref('Users/-LdE490P64UFp6SuwRiH/gameProfile').on('value', function(snapshot) {
+        f = snapshot.val()['fule']
+      },
+      fb.db.ref('Users/-LdE490P64UFp6SuwRiH/gameProfile').update( {
+          fuel: f - 10
+          
+        }).then((data)=>{
+            //success callback
+            console.log('data ' , data)
+            this.$router.push('/gameview')
+        }).catch((error)=>{
+            //error callback
+            console.log('error ' , error)
+        })
+      
+      )}
+    }
+    
+
 };
 </script>
