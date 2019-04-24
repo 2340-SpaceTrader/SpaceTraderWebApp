@@ -3,12 +3,12 @@ import 'firebase/firestore'
 
 // firebase init goes here
 const config = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: ""
+    apiKey: "AIzaSyCVRzz0wRUBBWiGpcrI2NTCazwXXxHPgdE",
+    authDomain: "spacetraderweb-30703.firebaseapp.com",
+    databaseURL: "https://spacetraderweb-30703.firebaseio.com",
+    projectId: "spacetraderweb-30703",
+    storageBucket: "spacetraderweb-30703.appspot.com",
+    messagingSenderId: "996674489456"
 }
 firebase.initializeApp(config)
 
@@ -25,16 +25,17 @@ db.settings(settings)
 
 // firebase collections
 const usersCollection = db.collection('users')
-const postsCollection = db.collection('posts')
-const commentsCollection = db.collection('comments')
-const likesCollection = db.collection('likes')
+// const postsCollection = db.collection('posts')
+// const commentsCollection = db.collection('comments')
+// const likesCollection = db.collection('likes')
+const planetsCollection = db.collection('Init Planets')
 
 export {
-    db,
-    auth,
-    currentUser,
+    // db,
+    // auth,
+    // currentUser,
     usersCollection,
-    postsCollection,
-    commentsCollection,
-    likesCollection
+    // postsCollection,
+    planetsCollection
+    // likesCollection
 }
